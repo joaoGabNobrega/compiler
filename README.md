@@ -42,8 +42,9 @@ projeto-interpretador-c
 │   │── interpretador.py     # Implementação do visitor para interpretação
 │   │── tabela_simbolos.py   # Gerenciamento de variáveis, structs e unions
 │
-│── tests                   # Testes e exemplos de código C
-│   │── exemplo.c           # Código C usado para teste
+│── testes                   # Testes e exemplos de código C
+│   │── teste1.c
+│   │── teste2.c           # Código C usado para teste
 │
 │── README.md               # Documentação do projeto
 │── requirements.txt        # Dependências do projeto
@@ -77,7 +78,7 @@ java -jar antlr-4.13.2-complete.jar -Dlanguage=Python3 -visitor -listener gramma
 Para rodar o interpretador em um arquivo C:
 
 ```bash
-python src/main.py tests/exemplo.c
+python src/main.py testes/teste1.c
 ```
 
 O interpretador irá processar o código e exibir os resultados na saída do terminal.
@@ -85,7 +86,7 @@ O interpretador irá processar o código e exibir os resultados na saída do ter
 ---
 
 ## 📝 Exemplo de Código C para Teste
-Este código pode ser salvo como `tests/exemplo.c` e executado pelo interpretador:
+Este código pode ser salvo como `testes/teste2.c` e executado pelo interpretador:
 
 ```c
 #include <stdio.h>
